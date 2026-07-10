@@ -1,0 +1,16 @@
+from fastapi.middleware.cors import CORSMiddleware
+
+origins = [
+    "http://localhost:8501",
+    "http://127.0.0.1:8501",
+]
+
+def setup_cors(app):
+    # Bạn tự gọi hàm add_middleware ở đây cho biến app truyền vào
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=origins,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
