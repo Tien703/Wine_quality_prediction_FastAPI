@@ -1,8 +1,11 @@
 import pandas as pd
 import joblib
 import numpy as np
+import os
 
-model = joblib.load("../models/my_model.joblib")
+
+model = joblib.load(os.path.join(os.path.dirname(__file__), "../../wine_predict_ML/models/my_model.joblib"))
+
 def predict_wine_quality(data_inputs: dict) ->float:
     df = pd.DataFrame([data_inputs])
     #Convert to red/white

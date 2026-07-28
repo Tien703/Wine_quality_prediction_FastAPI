@@ -31,7 +31,7 @@ Hệ thống hoạt động dưới dạng Client - Server. Do đó, bạn cần
 ### Bước 1: Khởi động Backend (FastAPI)
 Mở Terminal 1 tại thư mục gốc của dự án và chạy lệnh sau để khởi động server uvicorn:
 ```bash
-uvicorn src.main:app --reload
+uvicorn backend.app.main:app --reload
 ```
 API sẽ khởi chạy tại: `http://127.0.0.1:8000`. 
 *(Bạn có thể truy cập `http://127.0.0.1:8000/docs` để xem tài liệu API tự động sinh bởi Swagger UI).*
@@ -56,13 +56,13 @@ wine_qualitiy_prediction_app/
 ├── app.py                  # Mã nguồn giao diện Frontend (Streamlit).
 ├── requirements.txt        # Danh sách các thư viện cần thiết để chạy dự án.
 │
-├── src/                    # Thư mục mã nguồn Backend (FastAPI):
+├── backend/app/            # Thư mục mã nguồn Backend (FastAPI):
 │   ├── main.py             # File khởi chạy ứng dụng API.
-│   ├── inferences.py       # Chứa logic dự đoán, load model joblib.
-│   ├── schemas.py          # Định nghĩa cấu trúc dữ liệu input (Pydantic Models).
-│   └── config.py           # Cấu hình cài đặt API (ví dụ: CORS middleware).
+│   ├── core/inferences.py  # Chứa logic dự đoán, load model joblib.
+│   ├── schemas/schemas.py  # Định nghĩa cấu trúc dữ liệu input (Pydantic Models).
+│   └── core/config.py      # Cấu hình cài đặt API (ví dụ: CORS middleware).
 │
-├── models/                 # Thư mục chứa mô hình Machine Learning:
+├── wine_predict_ML/models/ # Thư mục chứa mô hình Machine Learning:
 │   └── my_model.joblib     # File model ML đã được huấn luyện (Train).
 │
 ├── data/                   # Thư mục lưu trữ dataset (CSV files...).
