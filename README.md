@@ -5,10 +5,9 @@ Dự án Hệ thống Dự đoán Chất lượng Rượu sử dụng Machine Le
 ---
 
 ## 🌟 Các Tính Năng Chính
-- **Giao diện thân thiện (Streamlit):** Giao diện web trực quan giúp người dùng nhập liệu 11 đặc trưng hóa học (hóa lý) của rượu (ví dụ: pH, nồng độ cồn, tỷ trọng...) và lựa chọn loại rượu (Đỏ / Trắng).
-- **Backend hiệu suất cao (FastAPI):** Hệ thống API xử lý request nhanh chóng, tiếp nhận dữ liệu từ frontend và trả về kết quả dự đoán.
-- **Mô hình Machine Learning:** Sử dụng mô hình đã được huấn luyện (trong thư mục `models/my_model.joblib`) để dự đoán điểm số chất lượng của rượu.
-
+- **Giao diện (Streamlit):** 
+- **Backend (FastAPI):**
+- **Machine Learning:**
 ---
 
 ## 🛠 Cài Đặt (Installation)
@@ -70,4 +69,4 @@ wine_qualitiy_prediction_app/
 ```
 
 ---
-*Chúc bạn có trải nghiệm tuyệt vời với Dự án Wine Quality Prediction!*
+
