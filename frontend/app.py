@@ -1,5 +1,9 @@
 import streamlit as st
 import requests
+st.set_page_config(
+    page_title="Wine quality prediction",
+    layout="wide"     # Tùy chọn: "centered" hoặc "wide"
+)
 st.title("Ứng dụng dự đoán chất lượng rượu")
 st.write("Nhập các thông số để dự đoán chất lượng rượu")
 col1, col2 = st.columns(2)

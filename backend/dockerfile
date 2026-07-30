@@ -13,5 +13,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy mã nguồn FastAPI và thư mục chứa Model
 COPY backend/app ./backend/app
 COPY backend/wine_predict_ML ./backend/wine_predict_ML
-# Khởi chạy uvicorn, lưu ý host phải là 0.0.0.0 để Docker cho phép truy cập từ ngoài vào
-CMD ["uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+MD ["uvicorn", "backend.app.main:app", "--host", "0.0.0.0", "--port", "8000"]
