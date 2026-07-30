@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 st.set_page_config(
     page_title="Wine quality prediction",
+    page_icon="🍷",  # Có thể dùng emoji hoặc đường dẫn đến file ảnh favicon (.png/.ico)
     layout="wide"     # Tùy chọn: "centered" hoặc "wide"
 )
 st.title("Ứng dụng dự đoán chất lượng rượu")
